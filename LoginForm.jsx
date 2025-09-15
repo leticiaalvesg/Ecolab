@@ -11,7 +11,7 @@ function LoginForm({ title, buttonText }) {
 
   return (
     <form className="login-form" onSubmit={handleSubmit}>
-      <h2>{title}</h2>
+      <h2>Bem-vindo ao Ecolab</h2>
 
       <input
         type="email"
@@ -36,4 +36,5 @@ function LoginForm({ title, buttonText }) {
 }
 
 export default LoginForm;
+
 
