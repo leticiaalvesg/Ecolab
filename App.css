@@ -84,10 +84,10 @@ body {
   font-size: 0.9rem;
 }
 
-/* Responsividade */
 @media (max-width: 500px) {
   .login-form {
     width: 90%;
   }
 }
+
 
