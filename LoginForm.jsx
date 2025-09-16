@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function LoginForm({ title, buttonText }) {
+function LoginForm({ title = "Bem-vindo ao Ecolab", buttonText = "Entrar" }) {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
@@ -11,7 +11,7 @@ function LoginForm({ title, buttonText }) {
 
   return (
     <form className="login-form" onSubmit={handleSubmit}>
-      <h2>Bem-vindo ao Ecolab</h2>
+      <h2>{title}</h2>
 
       <input
         type="email"
@@ -29,12 +29,12 @@ function LoginForm({ title, buttonText }) {
         required
       />
 
-      {/* Texto do botão também vem das props */}
       <button type="submit">{buttonText}</button>
     </form>
   );
 }
 
 export default LoginForm;
+
 
 
